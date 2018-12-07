@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hello
 {
@@ -10,6 +6,17 @@ namespace Hello
     {
         static void Main(string[] args)
         {
+            string sTmp = args[0];
+            Console.WriteLine("Hello "+sTmp+"! Today is " + DateTime.Now);
+            //Console.WriteLine(sTmp);
+            Console.WriteLine("Koniec.");
+
+            foreach (var item in args)
+            {
+                Console.WriteLine("Hello " + item); //+ sTmp + "! Today is " + DateTime.Now);
+                //Console.WriteLine(sTmp);
+                //Console.WriteLine("Koniec.");
+            }
         }
     }
 }
